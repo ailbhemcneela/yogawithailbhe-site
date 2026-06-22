@@ -98,3 +98,11 @@ git clone https://github.com/ailbhemcneela/yogawithailbhe-site.git
 cd yogawithailbhe-site
 ```
 Explain this as: *"I'll download your site files to your laptop so we can work on them."*
+
+### Publishing credentials (already set up)
+
+As of 2026-06-22, Ailbhe's laptop is set up to publish without any login prompts:
+- A GitHub personal access token (fine-grained, scoped to this repo only, "Contents: Read and write") is stored in her Mac Keychain via `git credential-osxkeychain`.
+- The `origin` remote uses the plain `https://github.com/ailbhemcneela/yogawithailbhe-site.git` URL (no credentials embedded in it).
+- This means `git push origin main` should just work going forward — no need to ask Ailbhe for a username or token again.
+- If a push ever fails with an authentication error (e.g. the token expired or was revoked), walk her through generating a new fine-grained token on GitHub.com (Settings → Developer settings → Personal access tokens → Fine-grained tokens, scoped to this repo, "Contents: Read and write") and re-run `git credential-osxkeychain store` with the new token to refresh it in Keychain.
