@@ -86,6 +86,10 @@ If Ailbhe wants to undo changes or go back to something she preferred:
 4. If she wants that version published, push it. Explain: *"I've restored your site to the version where [description]."*
 5. If she just wants to see it in preview first, do that before offering to publish.
 
+### No pull requests
+
+Always commit directly to main. Never create branches or pull requests — this site has one contributor and doesn't need a review workflow.
+
 ### Git setup note (for first-time setup on Ailbhe's laptop)
 
 If the site files aren't on her laptop yet, she needs to clone the repo once:
