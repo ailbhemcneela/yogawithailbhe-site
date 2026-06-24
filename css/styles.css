@@ -104,6 +104,49 @@ img {
   opacity: 0.85;
 }
 
+/* Split hero with image */
+
+.hero-split {
+  text-align: left;
+  padding: 0;
+}
+
+.hero-split-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  align-items: center;
+  gap: 3rem;
+  padding: 4rem 1.5rem;
+}
+
+.hero-split .hero-copy h1 {
+  margin: 0 0 1.25rem;
+  text-align: left;
+  max-width: 100%;
+}
+
+.hero-split .hero-copy p {
+  margin: 0;
+  text-align: left;
+  max-width: 480px;
+}
+
+.cta-row-left {
+  justify-content: flex-start;
+}
+
+.hero-media {
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.hero-media img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
 /* CTAs */
 
 .cta-row {
@@ -174,6 +217,24 @@ section h2 {
   gap: 2.5rem 3rem;
 }
 
+.class-card-media {
+  margin-bottom: 1.25rem;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.class-card-media img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.class-card:hover .class-card-media img {
+  transform: scale(1.03);
+}
+
 .class-card h3 {
   font-size: 1.3rem;
   margin-bottom: 0.75rem;
@@ -181,6 +242,74 @@ section h2 {
 
 .class-card p {
   opacity: 0.85;
+}
+
+/* Video moment */
+
+.moment {
+  position: relative;
+  padding: 0;
+}
+
+.moment-media {
+  width: 100%;
+  max-height: 70vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  background-color: var(--ink);
+}
+
+.moment-media video {
+  width: 100%;
+  max-height: 70vh;
+  object-fit: cover;
+}
+
+.moment-caption {
+  padding: 2rem 1.5rem;
+  text-align: center;
+}
+
+.moment-caption p {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 1.2rem;
+  opacity: 0.8;
+}
+
+/* About strip */
+
+.about-strip {
+  border-top: 1px solid var(--neutral-light);
+}
+
+.about-strip-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  align-items: center;
+  gap: 3rem;
+}
+
+.about-strip-media img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 2px;
+}
+
+.about-strip-copy h2 {
+  text-align: left;
+  margin-bottom: 1rem;
+}
+
+.about-strip-copy p {
+  opacity: 0.85;
+  max-width: 440px;
+}
+
+.about-strip-alt .about-strip-grid {
+  grid-template-columns: 1.2fr 1fr;
 }
 
 /* Testimonials */
@@ -299,5 +428,44 @@ blockquote.quote cite {
 
   section {
     padding: 3rem 0;
+  }
+
+  .hero-split-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+  }
+
+  .hero-split .hero-copy h1,
+  .hero-split .hero-copy p {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .cta-row-left {
+    justify-content: center;
+  }
+
+  .hero-media {
+    order: -1;
+    max-width: 360px;
+    margin: 0 auto;
+  }
+
+  .about-strip-grid,
+  .about-strip-alt .about-strip-grid {
+    grid-template-columns: 1fr;
+    gap: 1.75rem;
+    text-align: center;
+  }
+
+  .about-strip-copy h2 {
+    text-align: center;
+  }
+
+  .about-strip-copy p {
+    margin: 0 auto;
   }
 }
