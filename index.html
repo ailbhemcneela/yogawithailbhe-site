@@ -5,6 +5,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yoga with Ailbhe</title>
   <meta name="description" content="A space for people who need to slow down. Small, unhurried yoga classes and events in Dublin.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Yoga with Ailbhe">
+  <meta property="og:description" content="A space for people who need to slow down. Small, unhurried yoga classes and events in Dublin.">
+  <meta property="og:url" content="https://yogawithailbhe.ie/">
+  <meta property="og:image" content="https://yogawithailbhe.ie/assets/images/og-home.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;1,9..144,400&family=Inter:wght@400;500&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -43,18 +54,18 @@
               <img src="assets/images/class-dear-me.jpg" alt="Ailbhe reaching one arm upward, eyes closed, in a soft cream jumper." width="800" height="1067" loading="lazy">
             </div>
             <h3>Dear Me</h3>
-            <p>An evening to come back to yourself. Slow yoga, a letter written to yourself after an hour on the mat, and yoga nidra to close. Ten people, candles lit, everything provided. Runs a few times a year.</p>
+            <p>An evening to come back to yourself. Slow yoga, a letter written to yourself after an hour on the mat, and yoga nidra to close. Ten people, candles lit. Runs a few times a year.</p>
           </article>
           <article class="class-card">
             <div class="class-card-media">
               <img src="assets/images/class-into-the-flow.jpg" alt="Ailbhe in warrior pose, reaching upward with focus." width="800" height="1422" loading="lazy">
             </div>
             <h3>Into the Flow</h3>
-            <p>A four-week series for beginners or those coming back to the mat after a break. The setup of a normal studio can sometimes be overwhelming when you're starting from scratch — here we move together step by step, building your confidence to attend any studio class. Each week builds on the last until by week four, it flows. Small group, six people maximum, all equipment provided.</p>
+            <p>A four-week series for beginners or anyone coming back to the mat after a break. We move together, step by step, until by week four it flows. Small group, six people maximum.</p>
           </article>
           <article class="class-card">
             <div class="class-card-media">
-              <img src="assets/images/class-slow-flow.jpg" alt="Ailbhe mid-stretch in a side bend, warm light across the room." width="800" height="1422" loading="lazy">
+              <img src="assets/images/class-slow-flow.jpg" alt="Ailbhe standing tall with one arm extended, calm and grounded in warm light." width="800" height="1422" loading="lazy">
             </div>
             <h3>Slow Flow</h3>
             <p>A weekly drop-in class for all levels. Hatha-based, gentle, with breathwork and a proper rest at the end. This isn't about getting it right. It's about showing up.</p>
@@ -72,7 +83,10 @@
 
     <section class="moment">
       <div class="moment-media">
-        <video autoplay muted loop playsinline poster="assets/images/mat-rollout-poster.jpg">
+        <video class="moment-media-bg" autoplay muted loop playsinline aria-hidden="true" poster="assets/images/mat-rollout-poster.jpg">
+          <source src="assets/video/mat-rollout.mp4" type="video/mp4">
+        </video>
+        <video class="moment-media-fg" autoplay muted loop playsinline poster="assets/images/mat-rollout-poster.jpg">
           <source src="assets/video/mat-rollout.mp4" type="video/mp4">
         </video>
       </div>
@@ -101,6 +115,12 @@
             <p>"My first yoga class with Ailbhe was gentle and mindful, and exactly what I needed. Her calm guidance made me feel at ease from the start, and the peaceful atmosphere helped me slow down and breathe. I left feeling relaxed, grounded, and really glad I showed up."</p>
             <cite>— Nihan Gunay Yilmaz</cite>
           </article>
+        </div>
+        <div class="testimonial-dots" role="tablist" aria-label="Testimonial pages">
+          <button type="button" class="testimonial-dot is-active" aria-label="Testimonial 1"></button>
+          <button type="button" class="testimonial-dot" aria-label="Testimonial 2"></button>
+          <button type="button" class="testimonial-dot" aria-label="Testimonial 3"></button>
+          <button type="button" class="testimonial-dot" aria-label="Testimonial 4"></button>
         </div>
       </div>
     </section>
@@ -139,5 +159,7 @@
       </p>
     </div>
   </footer>
+
+  <script src="js/main.js"></script>
 </body>
 </html>

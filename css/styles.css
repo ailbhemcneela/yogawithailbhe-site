@@ -5,10 +5,12 @@
 }
 
 :root {
-  --ink: #2c2c2a;
-  --paper: #faf8f5;
+  --ink: #2e2519;
+  --paper: #faf7f2;
   --neutral: #cdbfae;
   --neutral-light: #f1ebe3;
+  --mustard: #8a6a35;
+  --mustard-dark: #6e5328;
   --max-width: 1080px;
 }
 
@@ -19,18 +21,22 @@ html {
 body {
   background-color: var(--paper);
   color: var(--ink);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
   font-size: 1rem;
   line-height: 1.6;
 }
 
 h1, h2, h3 {
-  font-family: Georgia, 'Times New Roman', serif;
-  font-weight: normal;
+  font-family: 'Fraunces', Georgia, 'Times New Roman', serif;
+  font-weight: 500;
   letter-spacing: 0.01em;
 }
 
 a {
+  color: var(--mustard-dark);
+}
+
+a:hover {
   color: var(--ink);
 }
 
@@ -60,7 +66,7 @@ img {
 }
 
 .site-header .logo {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: 'Fraunces', Georgia, 'Times New Roman', serif;
   font-size: 1.1rem;
   letter-spacing: 0.04em;
   text-decoration: none;
@@ -75,7 +81,7 @@ img {
   color: var(--ink);
   border-bottom: 1px solid currentColor;
   padding-bottom: 2px;
-  opacity: 0.6;
+  opacity: 0.75;
   transition: opacity 0.2s ease;
 }
 
@@ -169,12 +175,14 @@ img {
 }
 
 .btn-primary {
-  background-color: var(--ink);
+  background-color: var(--mustard-dark);
   color: var(--paper);
+  border-color: var(--mustard-dark);
 }
 
 .btn-primary:hover {
-  background-color: #4a4a46;
+  background-color: var(--ink);
+  border-color: var(--ink);
 }
 
 .btn-secondary {
@@ -252,18 +260,43 @@ section h2 {
 }
 
 .moment-media {
+  position: relative;
   width: 100%;
-  max-height: 70vh;
+  height: 70vh;
   overflow: hidden;
   display: flex;
   justify-content: center;
-  background-color: var(--ink);
+  background-color: var(--mustard-dark);
 }
 
-.moment-media video {
+.moment-media-bg {
+  position: absolute;
+  inset: 0;
   width: 100%;
-  max-height: 70vh;
+  height: 100%;
   object-fit: cover;
+  filter: blur(40px) brightness(0.85) saturate(1.2);
+  transform: scale(1.15);
+}
+
+.moment-media-fg {
+  position: relative;
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  object-fit: cover;
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.25);
+}
+
+@media (max-width: 600px) {
+  .moment-media-fg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .moment-media-bg {
+    display: none;
+  }
 }
 
 .moment-caption {
@@ -272,7 +305,7 @@ section h2 {
 }
 
 .moment-caption p {
-  font-family: Georgia, 'Times New Roman', serif;
+  font-family: 'Fraunces', Georgia, 'Times New Roman', serif;
   font-size: 1.2rem;
   opacity: 0.8;
 }
@@ -318,6 +351,10 @@ section h2 {
   background-color: var(--neutral-light);
 }
 
+.testimonials h2 {
+  margin-bottom: 2rem;
+}
+
 .testimonial-track {
   display: flex;
   gap: 2rem;
@@ -361,6 +398,29 @@ section h2 {
   .testimonial {
     flex: 0 0 calc(50% - 1rem);
   }
+}
+
+.testimonial-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-top: 1.5rem;
+}
+
+.testimonial-dot {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background-color: var(--neutral);
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.testimonial-dot.is-active {
+  background-color: var(--mustard-dark);
+  transform: scale(1.25);
 }
 
 /* Corporate-specific */
