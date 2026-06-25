@@ -1,24 +1,21 @@
-# Session notes — 24 June 2026
+# Session notes — 25 June 2026
 
 ## Where things stand
 
-Your site now has two pages built out, with real photos and one short video from your Desktop folders:
+Everything below is live on yogawithailbhe.ie right now.
 
-- **Homepage** (`/`) — hero photo, all four classes (Dear Me, Into the Flow, Slow Flow, Slow Burn) each with their own photo, a short looping video of a mat being rolled out, your four chosen testimonials, and a "what the space feels like" section with a photo from your studio.
-- **Corporate page** (`/corporate`) — its own hero photo, the Sarah Pearson quote, and a smiling photo of you for a personal touch.
-
-Everything has only been saved locally on your laptop so far — **nothing has been published to yogawithailbhe.ie yet**. The live site still shows the old placeholder homepage.
+- **Photos** — swapped the awkward Slow Flow class photo for a calmer, better-matching shot from the same room and light. The four class photos now read as one consistent set.
+- **Wording** — evened out the length of the Dear Me and Into the Flow descriptions, and cut the repeated "everything/all provided" phrasing across the class cards so each one reads a bit fresher.
+- **Look and feel** — added two new fonts (Fraunces for headings, Inter for body text) and a warm clay/terracotta accent colour pulled from your own photos, replacing the plain dark buttons and links from before.
+- **Small fixes** — fixed an ornate "&" symbol that looked out of place in "Classes & events" (now reads "Classes and events"), added dots under the testimonials so people can tell there's more than one to scroll through, added a favicon (the little icon in the browser tab), and added preview images so the site looks right if you ever share a link on Instagram or in a text.
+- **The video** — removed it. The mat-rollout clip was filmed vertically (phone held upright), which meant it always looked either cropped to almost nothing or boxed in with bars on the sides, no matter how we styled it. Rather than keep compromising, we took it out for now.
 
 ## What to do next
 
-1. **Open a new Claude Code session** and ask to see the preview — say something like *"show me the site"* and it'll start the local preview so you can look it over in your browser.
-2. **Have a look with fresh eyes.** Things worth deciding on:
-   - Are these the right photos for each class? There are more photos and videos in the `YWA Website Imagery` folder on your Desktop that weren't used — mostly a series in a bright pink jumper that didn't fit the muted colour palette, but worth a second look in case you'd like that style used elsewhere.
-   - The "Slow Burn" class photo is actually someone lighting incense, not a candle — close enough in mood, but flag it if you'd rather have a true candle shot.
-   - Check the short video near the bottom of the homepage plays smoothly for you.
-3. **When you're happy, ask to publish.** Just say *"publish this to the live site"* and it'll go live at yogawithailbhe.ie within a minute or two.
-4. If you want to keep refining the design, things like spacing, colours, or section order are all easy to keep adjusting before you publish.
+1. **Film a horizontal video** for that spot — phone held sideways (landscape), same calm mat-rollout idea or anything similarly simple. Once you have a clip, start a new session and just say *"add this video back in"* and point to the file.
+2. **Have a look with fresh eyes** at the clay/terracotta colour and the new fonts — they're easy to adjust further if anything feels off once you've lived with it for a few days.
+3. Everything else from today is settled and published — no outstanding decisions on photos or wording.
 
 ## Where the original photos and videos live
 
-`~/Desktop/YWA Website Imagery` — 19 photos and 7 video clips, in case you want to swap any of the choices made this session.
+`~/Desktop/YWA Website Imagery` — the full set of photos and video clips, including the ones not used on the site, in case you want to swap anything later.
