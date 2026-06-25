@@ -9,8 +9,8 @@
   --paper: #faf7f2;
   --neutral: #cdbfae;
   --neutral-light: #f1ebe3;
-  --mustard: #8a6a35;
-  --mustard-dark: #6e5328;
+  --mustard: #97624a;
+  --mustard-dark: #7a4c38;
   --max-width: 1080px;
 }
 
@@ -260,43 +260,18 @@ section h2 {
 }
 
 .moment-media {
-  position: relative;
   width: 100%;
-  height: 70vh;
+  max-height: 70vh;
   overflow: hidden;
   display: flex;
   justify-content: center;
   background-color: var(--mustard-dark);
 }
 
-.moment-media-bg {
-  position: absolute;
-  inset: 0;
+.moment-media video {
   width: 100%;
-  height: 100%;
+  max-height: 70vh;
   object-fit: cover;
-  filter: blur(40px) brightness(0.85) saturate(1.2);
-  transform: scale(1.15);
-}
-
-.moment-media-fg {
-  position: relative;
-  height: 100%;
-  width: auto;
-  max-width: 100%;
-  object-fit: cover;
-  box-shadow: 0 0 60px rgba(0, 0, 0, 0.25);
-}
-
-@media (max-width: 600px) {
-  .moment-media-fg {
-    width: 100%;
-    height: 100%;
-  }
-
-  .moment-media-bg {
-    display: none;
-  }
 }
 
 .moment-caption {
