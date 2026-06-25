@@ -11,6 +11,8 @@
   --neutral-light: #f1ebe3;
   --mustard: #97624a;
   --mustard-dark: #7a4c38;
+  --clay-deep: #5c3826;
+  --clay-tint: #d9a989;
   --max-width: 1080px;
 }
 
@@ -213,6 +215,17 @@ section h2 {
   opacity: 0.85;
 }
 
+.eyebrow {
+  display: block;
+  font-size: 0.78rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  color: var(--mustard-dark);
+  margin-bottom: 0.9rem;
+  text-align: center;
+}
+
 /* Classes grid */
 
 .classes {
@@ -221,19 +234,21 @@ section h2 {
 
 .classes h2 {
   font-size: clamp(1.9rem, 4vw, 2.6rem);
+  margin-bottom: 3rem;
 }
 
 .classes-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 3.5rem 4rem;
+  gap: 3.5rem 3.5rem;
+  max-width: 760px;
+  margin: 0 auto;
 }
 
 .class-card-media {
-  margin-bottom: 2rem;
+  margin-bottom: 1.75rem;
   overflow: hidden;
   border-radius: 2px;
-  max-width: 75%;
 }
 
 .class-card-media img {
@@ -250,11 +265,13 @@ section h2 {
 
 .class-card h3 {
   font-size: 1.3rem;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.6rem;
+  color: var(--clay-deep);
 }
 
 .class-card p {
   opacity: 0.85;
+  max-width: 34ch;
 }
 
 /* About strip */
@@ -295,12 +312,18 @@ section h2 {
 /* Testimonials */
 
 .testimonials {
-  background-color: var(--paper);
+  background-color: var(--clay-deep);
+  color: var(--paper);
+}
+
+.testimonials .eyebrow {
+  color: var(--clay-tint);
 }
 
 .testimonials h2 {
   font-size: clamp(1.7rem, 3.5vw, 2.3rem);
   margin-bottom: 2rem;
+  color: var(--paper);
 }
 
 .testimonial-track {
@@ -317,7 +340,7 @@ section h2 {
 }
 
 .testimonial-track::-webkit-scrollbar-thumb {
-  background-color: var(--neutral);
+  background-color: var(--clay-tint);
   border-radius: 3px;
 }
 
@@ -325,8 +348,10 @@ section h2 {
   flex: 0 0 100%;
   scroll-snap-align: start;
   background-color: var(--paper);
+  color: var(--ink);
   padding: 2.5rem;
   max-width: 560px;
+  border-radius: 2px;
 }
 
 .testimonial p {
@@ -339,7 +364,8 @@ section h2 {
   font-size: 0.85rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  opacity: 0.7;
+  color: var(--mustard-dark);
+  opacity: 1;
 }
 
 @media (min-width: 640px) {
@@ -361,24 +387,25 @@ section h2 {
   padding: 0;
   border: none;
   border-radius: 50%;
-  background-color: var(--neutral);
+  background-color: rgba(250, 247, 242, 0.35);
   cursor: pointer;
   transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
 .testimonial-dot.is-active {
-  background-color: var(--mustard-dark);
+  background-color: var(--clay-tint);
   transform: scale(1.25);
 }
 
 /* Corporate-specific */
 
 .corporate-link {
-  background-color: var(--neutral-light);
+  background-color: var(--paper);
 }
 
 .corporate-link h2 {
   font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+  color: var(--clay-deep);
 }
 
 .corporate-body {
