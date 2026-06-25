@@ -252,48 +252,6 @@ section h2 {
   opacity: 0.85;
 }
 
-/* Video moment */
-
-.moment {
-  position: relative;
-  padding: 0;
-}
-
-.moment-media {
-  width: 100%;
-  max-height: 70vh;
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  background-color: var(--mustard-dark);
-}
-
-.moment-media video {
-  height: 70vh;
-  max-height: 70vh;
-  width: auto;
-  max-width: 100%;
-  object-fit: cover;
-}
-
-@media (max-width: 600px) {
-  .moment-media video {
-    width: 100%;
-    height: 70vh;
-  }
-}
-
-.moment-caption {
-  padding: 2rem 1.5rem;
-  text-align: center;
-}
-
-.moment-caption p {
-  font-family: 'Fraunces', Georgia, 'Times New Roman', serif;
-  font-size: 1.2rem;
-  opacity: 0.8;
-}
-
 /* About strip */
 
 .about-strip {
