@@ -1,21 +1,25 @@
-# Session notes — 25 June 2026
+# Session notes — 25 June 2026 (part 2)
 
 ## Where things stand
 
-Everything below is live on yogawithailbhe.ie right now.
+Everything below has been published to yogawithailbhe.ie. (GitHub Pages can take a few minutes to catch up after publishing — if you don't see it right away, wait a little and do a hard refresh.)
 
-- **Photos** — swapped the awkward Slow Flow class photo for a calmer, better-matching shot from the same room and light. The four class photos now read as one consistent set.
-- **Wording** — evened out the length of the Dear Me and Into the Flow descriptions, and cut the repeated "everything/all provided" phrasing across the class cards so each one reads a bit fresher.
-- **Look and feel** — added two new fonts (Fraunces for headings, Inter for body text) and a warm clay/terracotta accent colour pulled from your own photos, replacing the plain dark buttons and links from before.
-- **Small fixes** — fixed an ornate "&" symbol that looked out of place in "Classes & events" (now reads "Classes and events"), added dots under the testimonials so people can tell there's more than one to scroll through, added a favicon (the little icon in the browser tab), and added preview images so the site looks right if you ever share a link on Instagram or in a text.
-- **The video** — removed it. The mat-rollout clip was filmed vertically (phone held upright), which meant it always looked either cropped to almost nothing or boxed in with bars on the sides, no matter how we styled it. Rather than keep compromising, we took it out for now.
+- **Top photo** — swapped to the calmer, soft-light couch photo you preferred. The old prayer-hands photo moved down to the "Into the Flow" class card instead of being removed.
+- **Removed** the "A space that feels like real life" section, since the new top photo already says that.
+- **Classes and events** — the four photos are smaller and properly centred with much more breathing room around them and between the cards; no more odd-looking gaps.
+- **Colour and atmosphere** — moved away from the single mustard/clay tone to a richer, more distinctive mix: warm chestnut (buttons, links), dusty rose (the small tracked labels above each heading, e.g. "Offerings"), and a deep anthracite grey (the bold "What people say" band). Pulled from tones already in your own photos.
+- **Wording** — eyebrow labels no longer use "our"/"team" language ("Offerings" instead of "Our offerings", "For teams" instead of "Work together") since it's just you.
+- **Navigation** — added a clear "Book a class" button next to "Corporate" in the menu (on both pages), so the header reads as navigation rather than a stray page title.
+- **Hero buttons** — "Book a class" and "Email Ailbhe" are now equal width and centred properly, especially on phone screens where they used to look mismatched.
+- **Testimonials** — fixed three things: the cards no longer have a big empty gap of white space after the text; they're now a continuous "ribbon" of normal-sized cards with a small gap between them (so you naturally see a slice of the next one), rather than one giant card stretching the full width; and the progress dots should now track correctly all the way to the last testimonial (the old layout had 2 testimonials sharing a screen but 4 dots, which is why the last dot never used to light up).
 
 ## What to do next
 
-1. **Film a horizontal video** for that spot — phone held sideways (landscape), same calm mat-rollout idea or anything similarly simple. Once you have a clip, start a new session and just say *"add this video back in"* and point to the file.
-2. **Have a look with fresh eyes** at the clay/terracotta colour and the new fonts — they're easy to adjust further if anything feels off once you've lived with it for a few days.
-3. Everything else from today is settled and published — no outstanding decisions on photos or wording.
+1. **Have a fresh look** at the new colour palette (chestnut/dusty rose/anthracite) after living with it a few days — easy to adjust further.
+2. **Testimonial dots** — worth double-checking in your own browser that clicking through all 4 dots highlights correctly. My testing tool had some sync issues this session, so while the underlying fix should be solid, it's worth a real click-through.
+3. **Per-class booking links** — we discussed whether each class card (Dear Me, Into the Flow, etc.) should link straight to Setmore. Decided to leave it for now — revisit whenever you're ready, just say "let's add booking links to each class."
+4. **Horizontal video** — still outstanding from last time. Once you've filmed a landscape clip for the mat-rollout spot, start a new session and say "add this video back in."
 
 ## Where the original photos and videos live
 
-`~/Desktop/YWA Website Imagery` — the full set of photos and video clips, including the ones not used on the site, in case you want to swap anything later.
+`~/Desktop/YWA Website Imagery` — the full set of photos and video clips, including ones not currently used on the site.
