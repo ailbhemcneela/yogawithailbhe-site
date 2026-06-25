@@ -351,8 +351,10 @@ section h2 {
 }
 
 .testimonial-track {
-  display: flex;
-  align-items: flex-start;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 100%;
+  align-items: start;
   gap: 2rem;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -370,22 +372,27 @@ section h2 {
 }
 
 .testimonial {
-  flex: 0 0 100%;
   width: 100%;
   scroll-snap-align: start;
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial-card {
+  width: 100%;
+  max-width: 640px;
   background-color: var(--paper);
   color: var(--ink);
   padding: 2.5rem;
   border-radius: 2px;
 }
 
-.testimonial p {
+.testimonial-card p {
   font-style: italic;
   margin-bottom: 1rem;
-  max-width: 60ch;
 }
 
-.testimonial cite {
+.testimonial-card cite {
   font-style: normal;
   font-size: 0.85rem;
   letter-spacing: 0.05em;
