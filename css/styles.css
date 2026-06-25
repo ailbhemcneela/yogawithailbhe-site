@@ -351,11 +351,9 @@ section h2 {
 }
 
 .testimonial-track {
-  display: grid;
-  grid-auto-flow: column;
-  grid-auto-columns: 100%;
-  align-items: start;
-  gap: 2rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1.25rem;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   padding-bottom: 1rem;
@@ -372,27 +370,21 @@ section h2 {
 }
 
 .testimonial {
-  width: 100%;
+  flex: 0 0 auto;
+  width: min(520px, 80vw);
   scroll-snap-align: start;
-  display: flex;
-  justify-content: center;
-}
-
-.testimonial-card {
-  width: 100%;
-  max-width: 640px;
   background-color: var(--paper);
   color: var(--ink);
   padding: 2.5rem;
   border-radius: 2px;
 }
 
-.testimonial-card p {
+.testimonial p {
   font-style: italic;
   margin-bottom: 1rem;
 }
 
-.testimonial-card cite {
+.testimonial cite {
   font-style: normal;
   font-size: 0.85rem;
   letter-spacing: 0.05em;
