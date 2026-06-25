@@ -76,6 +76,12 @@ img {
   color: var(--ink);
 }
 
+.site-header nav {
+  display: flex;
+  align-items: center;
+  gap: 1.75rem;
+}
+
 .site-header nav a {
   font-size: 0.8rem;
   letter-spacing: 0.1em;
@@ -90,6 +96,19 @@ img {
 
 .site-header nav a:hover {
   opacity: 1;
+}
+
+.site-header nav a.nav-cta {
+  border-bottom: none;
+  padding: 0.55rem 1.1rem;
+  background-color: var(--chestnut-deep);
+  color: var(--paper);
+  opacity: 1;
+  transition: background-color 0.2s ease;
+}
+
+.site-header nav a.nav-cta:hover {
+  background-color: var(--ink);
 }
 
 /* Hero */
@@ -333,6 +352,7 @@ section h2 {
 
 .testimonial-track {
   display: flex;
+  align-items: flex-start;
   gap: 2rem;
   overflow-x: auto;
   scroll-snap-type: x mandatory;
@@ -351,17 +371,18 @@ section h2 {
 
 .testimonial {
   flex: 0 0 100%;
+  width: 100%;
   scroll-snap-align: start;
   background-color: var(--paper);
   color: var(--ink);
   padding: 2.5rem;
-  max-width: 560px;
   border-radius: 2px;
 }
 
 .testimonial p {
   font-style: italic;
-  margin-bottom: 1.25rem;
+  margin-bottom: 1rem;
+  max-width: 60ch;
 }
 
 .testimonial cite {
@@ -373,17 +394,11 @@ section h2 {
   opacity: 1;
 }
 
-@media (min-width: 640px) {
-  .testimonial {
-    flex: 0 0 calc(50% - 1rem);
-  }
-}
-
 .testimonial-dots {
   display: flex;
   justify-content: center;
   gap: 0.6rem;
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
 }
 
 .testimonial-dot {
@@ -494,6 +509,25 @@ blockquote.quote cite {
 
   .cta-row-left {
     justify-content: center;
+  }
+
+  .cta-row .btn {
+    width: 100%;
+    max-width: 280px;
+    text-align: center;
+  }
+
+  .site-header .wrap {
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+
+  .site-header nav {
+    gap: 1.25rem;
+  }
+
+  .site-header nav a.nav-cta {
+    white-space: nowrap;
   }
 
   .hero-media {
