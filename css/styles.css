@@ -474,65 +474,6 @@ blockquote.quote cite {
   margin: 2.5rem 0;
 }
 
-/* About teaser (homepage) */
-
-.about-teaser {
-  border-top: 1px solid var(--neutral-light);
-}
-
-.about-teaser-grid {
-  display: grid;
-  grid-template-columns: 1fr 1.4fr;
-  align-items: center;
-  gap: 4rem;
-}
-
-.about-teaser-media img {
-  width: 100%;
-  height: auto;
-  aspect-ratio: 3 / 4;
-  object-fit: cover;
-  border-radius: 2px;
-}
-
-.about-teaser-copy .eyebrow {
-  text-align: left;
-}
-
-.about-teaser-copy h2 {
-  text-align: left;
-  font-size: clamp(1.6rem, 3vw, 2.1rem);
-  margin-bottom: 1.25rem;
-}
-
-.about-teaser-copy p {
-  opacity: 0.85;
-  max-width: 48ch;
-  margin-bottom: 0;
-}
-
-@media (max-width: 700px) {
-  .about-teaser-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    text-align: center;
-  }
-
-  .about-teaser-copy .eyebrow,
-  .about-teaser-copy h2 {
-    text-align: center;
-  }
-
-  .about-teaser-copy p {
-    margin: 0 auto;
-  }
-
-  .about-teaser-media {
-    max-width: 320px;
-    margin: 0 auto;
-  }
-}
-
 /* FAQ */
 
 .faq {
