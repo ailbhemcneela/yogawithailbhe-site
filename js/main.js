@@ -1,3 +1,10 @@
+// FAQ: force display:block on summary so Chrome hides the native triangle marker
+(function () {
+  document.querySelectorAll('.faq-item summary').forEach(function (s) {
+    s.style.display = 'block';
+  });
+})();
+
 // Testimonial carousel dots
 (function () {
   var track = document.querySelector('.testimonial-track');

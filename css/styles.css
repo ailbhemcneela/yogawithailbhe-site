@@ -457,6 +457,99 @@ blockquote.quote cite {
   opacity: 0.7;
 }
 
+/* FAQ */
+
+.faq {
+  background-color: var(--neutral-light);
+}
+
+.faq-list {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  border-top: 1px solid var(--neutral);
+}
+
+.faq-item:last-child {
+  border-bottom: 1px solid var(--neutral);
+}
+
+.faq-item summary {
+  display: block;
+  padding: 1.25rem 0;
+  cursor: pointer;
+  font-family: 'Fraunces', Georgia, 'Times New Roman', serif;
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: var(--anthracite);
+  user-select: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item summary::marker {
+  content: '';
+}
+
+.faq-icon {
+  float: right;
+  font-family: 'Inter', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 300;
+  color: var(--chestnut);
+  line-height: 1.4;
+  transition: transform 0.2s ease;
+  display: inline-block;
+  margin-left: 1rem;
+}
+
+.faq-item[open] .faq-icon {
+  transform: rotate(45deg);
+}
+
+.faq-item p {
+  padding-bottom: 1.5rem;
+  opacity: 0.85;
+  max-width: 56ch;
+}
+
+/* Newsletter */
+
+.newsletter {
+  background-color: var(--chestnut-deep);
+  color: var(--paper);
+  text-align: center;
+}
+
+.newsletter .eyebrow {
+  color: var(--dusty-pink-tint);
+}
+
+.newsletter h2 {
+  color: var(--paper);
+  font-size: clamp(1.5rem, 3vw, 2rem);
+}
+
+.newsletter .section-intro {
+  color: var(--paper);
+  opacity: 0.8;
+}
+
+.newsletter .btn-primary {
+  background-color: var(--paper);
+  color: var(--chestnut-deep);
+  border-color: var(--paper);
+}
+
+.newsletter .btn-primary:hover {
+  background-color: var(--neutral-light);
+  border-color: var(--neutral-light);
+}
+
 /* Footer */
 
 .site-footer {
