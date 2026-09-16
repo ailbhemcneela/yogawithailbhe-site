@@ -209,6 +209,7 @@ img {
 .btn-primary:hover {
   background-color: var(--ink);
   border-color: var(--ink);
+  color: var(--paper);
 }
 
 .btn-secondary {
@@ -565,6 +566,7 @@ blockquote.quote cite {
 .newsletter .btn-primary:hover {
   background-color: var(--neutral-light);
   border-color: var(--neutral-light);
+  color: var(--chestnut-deep);
 }
 
 /* Footer */
