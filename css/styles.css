@@ -667,6 +667,10 @@ blockquote.quote cite {
 
 /* Cookie banner */
 
+.cookie-banner[hidden] {
+  display: none;
+}
+
 .cookie-banner {
   position: fixed;
   left: 1rem;
