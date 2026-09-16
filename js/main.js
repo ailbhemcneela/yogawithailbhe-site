@@ -82,16 +82,24 @@
     }
 
     banner.hidden = false;
+    document.body.style.paddingBottom = banner.offsetHeight + 'px';
+    window.addEventListener('resize', function () {
+      if (!banner.hidden) {
+        document.body.style.paddingBottom = banner.offsetHeight + 'px';
+      }
+    });
 
     document.getElementById('cookie-accept').addEventListener('click', function () {
       localStorage.setItem(CONSENT_KEY, 'accepted');
       banner.hidden = true;
+      document.body.style.paddingBottom = '';
       loadAnalytics();
     });
 
     document.getElementById('cookie-decline').addEventListener('click', function () {
       localStorage.setItem(CONSENT_KEY, 'declined');
       banner.hidden = true;
+      document.body.style.paddingBottom = '';
     });
   });
 })();
