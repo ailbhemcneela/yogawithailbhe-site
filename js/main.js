@@ -66,6 +66,23 @@
     gtag('config', MEASUREMENT_ID);
   }
 
+  function trackEvent(name, params) {
+    if (typeof window.gtag === 'function') {
+      window.gtag('event', name, params);
+    }
+  }
+
+  document.addEventListener('click', function (e) {
+    var link = e.target.closest('a');
+    if (!link || !link.href) return;
+
+    if (link.href.indexOf('yogawithailbhe.setmore.com') !== -1) {
+      trackEvent('book_class_click', { link_url: link.href });
+    } else if (link.href.indexOf('mailto:hello@yogawithailbhe.ie') === 0) {
+      trackEvent('email_click', { link_url: link.href });
+    }
+  });
+
   document.addEventListener('DOMContentLoaded', function () {
     var banner = document.getElementById('cookie-banner');
     if (!banner) return;
