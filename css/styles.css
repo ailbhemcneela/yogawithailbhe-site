@@ -676,9 +676,8 @@ blockquote.quote cite {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: var(--paper);
-  color: var(--ink);
-  border-top: 1px solid var(--neutral-light);
+  background-color: var(--anthracite);
+  color: var(--paper);
   display: flex;
   z-index: 100;
 }
@@ -714,24 +713,24 @@ blockquote.quote cite {
   text-transform: uppercase;
   padding: 0.5rem 1rem;
   border-radius: 2px;
-  border: 1px solid var(--ink);
+  border: 1px solid var(--paper);
   cursor: pointer;
   background-color: transparent;
-  color: var(--ink);
+  color: var(--paper);
   transition: opacity 0.2s ease, background-color 0.2s ease, color 0.2s ease;
 }
 
 .cookie-btn-primary {
-  background-color: var(--chestnut-deep);
-  color: var(--paper);
-  border-color: var(--chestnut-deep);
+  background-color: var(--dusty-pink-tint);
+  color: var(--anthracite);
+  border-color: var(--dusty-pink-tint);
 }
 
 .cookie-btn-primary:hover {
-  background-color: var(--ink);
-  border-color: var(--ink);
+  background-color: var(--paper);
+  border-color: var(--paper);
 }
 
 .cookie-btn-secondary:hover {
-  background-color: var(--neutral-light);
+  background-color: rgba(255, 255, 255, 0.1);
 }
