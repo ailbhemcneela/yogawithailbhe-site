@@ -47,3 +47,51 @@
     }
   });
 })();
+
+// Google Analytics + cookie consent banner
+(function () {
+  var CONSENT_KEY = 'ga-consent';
+  var MEASUREMENT_ID = 'G-0BEGRH8LEF';
+
+  function loadAnalytics() {
+    var script = document.createElement('script');
+    script.async = true;
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=' + MEASUREMENT_ID;
+    document.head.appendChild(script);
+
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { window.dataLayer.push(arguments); }
+    window.gtag = gtag;
+    gtag('js', new Date());
+    gtag('config', MEASUREMENT_ID);
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    var banner = document.getElementById('cookie-banner');
+    if (!banner) return;
+
+    var consent = localStorage.getItem(CONSENT_KEY);
+
+    if (consent === 'accepted') {
+      loadAnalytics();
+      return;
+    }
+
+    if (consent === 'declined') {
+      return;
+    }
+
+    banner.hidden = false;
+
+    document.getElementById('cookie-accept').addEventListener('click', function () {
+      localStorage.setItem(CONSENT_KEY, 'accepted');
+      banner.hidden = true;
+      loadAnalytics();
+    });
+
+    document.getElementById('cookie-decline').addEventListener('click', function () {
+      localStorage.setItem(CONSENT_KEY, 'declined');
+      banner.hidden = true;
+    });
+  });
+})();
